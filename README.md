@@ -1,6 +1,6 @@
 # SIEM Integration Engine
 
-A small defensive event-ingestion service that normalizes JSON security events into SQLite.
+Defensive JSON security-event ingestion service with SQLite storage.
 
 ## Run
 ```bash
@@ -8,4 +8,4 @@ python -m venv .venv
 pip install -r requirements.txt
 python app.py
 ```
-Use POST /ingest and GET /events. Keep integrations restricted to systems you are authorized to monitor.
+POST events to /ingest and inspect them with GET /events. Use only with systems you are authorized to monitor.
